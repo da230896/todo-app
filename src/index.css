@@ -1,0 +1,15 @@
+.StatusSelection {
+    border: 2px solid;
+    border-radius: 3px;
+    border-color: rgba(175, 47, 47, 0.3);
+}
+
+.colorSpan {
+    width: 20px;
+    height: 12px;
+    border-radius: 3;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
