@@ -6,15 +6,23 @@ import TodoList from './app/features/todos/todoList.js'
 function App() {
   return (
     <>
-      <h1>
-        A Simple To Do App
-      </h1>
-      <h2>
-        TODOs
-      </h2>
-      <Header/>
-      <TodoList/>
-      {/* <Footer/> */}
+    <div class="App">
+      <nav>
+        <section>
+        <h1>A Simple To-Do App</h1>
+        </section>
+      </nav>
+      <main>
+        <section>
+          <h2 class="Banner-Todos">TODOs</h2>
+          <div class="todoapp">
+            <Header/>
+            <TodoList/> 
+            {/* <Footer/> */}
+          </div>
+        </section>
+      </main>
+    </div>
     </>
   );
 }
