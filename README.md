@@ -1,1 +1,1 @@
-This is a dummy project can be used to gain some quick insight into redux/react
+This repo is while ramping up in react-redux
