@@ -49,9 +49,11 @@ nav section h1{
 
 main {
     background: #f5f5f5;
+    align-self: center;
     display: flex;
     flex-direction: column;
-    min-width: 800px;
+    margin-top: 100px;
+    width: 50vw;
 }
 
 .Banner-Todos {
@@ -62,11 +64,70 @@ main {
 }
 
 .todoapp{
-    min-width: 800px;
+    width: 50vw;
     background: #fff;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    box-shadow:  0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
 }
 
+.todoapp header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 1px dashed rgba(153, 153, 153, 0.441);
+}
+
+.new-todo {
+    width: 100%;
+    font-size: 2em;
+    line-height: 1.4em;
+    font-family: inherit;
+    padding: 5px 5px 5px 30px;
+    border: none;
+}
+
+.todo-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.todo-list li {
+    margin-top: 20px;
+    font: 1.25em;
+    list-style: none;
+    
+}
+
+.todo-list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom:1px solid rgba(168, 187, 188, 0.564);
+}
+
+.todo-list-item .left-aligned-item {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: flex-start;
+    flex-grow: 2;
+}
+
+.todo-list-item .right-aligned-item {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.todo-list-item .right-aligned-item select{
+    margin-right: 20px;
+}
 
 
 

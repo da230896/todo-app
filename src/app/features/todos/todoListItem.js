@@ -19,21 +19,25 @@ const TodoListItem = ({todoId}) => {
     })
 
     return (
-        <li>
-        <input
-            type="checkbox"
-            checked={completed}
-            onChange={handleCompleted}
-        />
-        <div>{text}</div>
-        <select
-            value={color}
-            style={{color}}
-            onChange={handleColorChange}
-        >
-            {colorOptions}
-        </select>
-        <button text="Delete" onClick={handleDeleted}/>
+        <li class="todo-list-item">
+        <div class="left-aligned-item">
+            <input 
+                type="checkbox"
+                checked={completed}
+                onChange={handleCompleted}
+            />
+            <div >{text}</div>
+        </div>   
+        <div class="right-aligned-item">
+            <select
+                value={color}
+                style={{color}}
+                onChange={handleColorChange}
+            >
+                {colorOptions}
+            </select>
+            <button text="Delete" onClick={handleDeleted}/>
+        </div> 
         </li>
     )
 

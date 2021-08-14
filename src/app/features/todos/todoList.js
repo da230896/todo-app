@@ -12,7 +12,7 @@ const TodoList = () => {
         return <TodoListItem key={todoId} todoId={todoId}/>
     })
 
-    return (<ul>
+    return (<ul className="todo-list">
         {todoListItems}
     </ul>)
 }

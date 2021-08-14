@@ -16,13 +16,15 @@ const Header = () => {
     }
 
     return (
-        <input  
-                type="text"
-                placeholder="What needs to be done?"
-                autoFocus={true}
-                value={inputText}
-                onChange={handleTextInput}
-                onKeyDown={handleKeyDown}/>
+        <header class='header'>
+            <input  class='new-todo'
+                    type="text"
+                    placeholder="What needs to be done?"
+                    autoFocus={true}
+                    value={inputText}
+                    onChange={handleTextInput}
+                    onKeyDown={handleKeyDown}/>
+        </header>
     )
 
 }
